@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/33027aa4f7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu" >
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#mywork">My Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rohit</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- - -------about-------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/rohit.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Rohit, a passionate CSE B.Tech student at Netaji Subhash University of Technology. Proficient in front-end development, I've crafted interactive experiences like Tic Tac Toe with React and my portfolio using HTML, CSS, and JavaScript. 
+                        My expertise extends to SQL, Power BI, and R programming for robust data analysis. Eager to innovate, I'm dedicated to shaping digital landscapes.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="skill-card">
+                            <div class="skill-logo">
+                                <i class="fa-brands fa-html5"></i>
+                            </div>
+                            <div class="skill-details">
+                                <span>HTML</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-c"></i>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <span>Power BI</span>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------services------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front end</h2>
+                    <p>Front-end web development involves creating the visual elements of a website that users interact with directly. 
+                        It combines HTML for structure, CSS for styling, and JavaScript for interactivity. HTML establishes the basic structure of web content. 
+                        CSS enhances the presentation by controlling layout, colors, and fonts. JavaScript adds interactivity,</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Data analysis using Power BI and R programming combines powerful tools for in-depth data exploration and visualization. 
+                        Power BI, a business analytics service by Microsoft, allows users to connect, analyze, and visualize data from various sources. It provides interactive dashboards and business intelligence capabilities, 
+                        making it easier to gain insights from complex datasets.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-react"></i>
+                    <h2>React</h2>
+                    <p>React is a popular JavaScript library for building user interfaces, particularly for single-page applications where the user interface needs to be interactive and dynamic. It allows developers to create reusable UI components, making the development process efficient and maintainable.
+                         React utilizes a virtual DOM, which enhances performance by minimizing direct manipulation of the actual DOM.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------ MY WORK ------- -->
+    <div id="mywork">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="image/work-1.png">
+                <div class="layer">
+                    <h3>Tic Tac Toe Game</h3>
+                    <p>Tic Tac Toe is a classic two-player game built using React, a popular JavaScript library for 
+                        building user interfaces. In this game, players take turns marking a square grid</p>
+                    <a href="http://addicted-clover.surge.sh"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work5.png">
+                <div class="layer">
+                    <h3>Portfolio website</h3>
+                    <p>The given portfolio website showcases Rohit's skills and expertise as a web developer.
+                         It features a clean and modern design, providing visitors with information about Rohit's background, skills, services, and work samples.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/work-3.png">
+                <div class="layer">
+                    <h3>To do list</h3>
+                    <p>this is a to do list created using react.js</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>  
+        <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- ------ contact ------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>    
+                    <p><i class="fa-solid fa-paper-plane"></i> rk267471@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 8383866968</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rohit-kumar-664760283/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/Rohit-foryou"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/Rohit_Rkcoder/"><i class="fa-brands fa-leanpub"></i></a>
+                    </div>
+                    <a href="image/Rohit_resume.pdf" download class="btn btn2">Downlaod CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" email="email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+        
+    }
+</script>
+    
+</body>
+</html> 
